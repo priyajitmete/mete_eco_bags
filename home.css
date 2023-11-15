@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+--deep-color : rgb(7, 61, 7);
+--medium-green: rgb(4, 192, 4);
+--light-color: rgb(83, 240, 83);
+}
+
+.contact-bar{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--medium-green);
+}
+
+.contact-bar a{
+    color: white;
+    padding-right: 50px;
+}
+
+header{
+    display: flex;
+    z-index: 99999;
+    background-color: rgba(228, 255, 184, 0.493);
+    align-items: center;
+    box-shadow: 10px ,10px,10px, rgba(0, 0, 0, 0.753);
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header img{
+    width: 250px;
+}
+
+
+header ul {
+    display: flex;
+    
+}
+
+header ul li{
+    padding: 20px;
+}
+
+header ul li a{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--deep-color);
+}
+
+header ul li:hover{
+    background: var(--light-color);
+}
+
+
+.banner{
+    display: flex;
+    height: 70vh;
+}
+.banner .text{
+    width: 40%;
+}
+.banner .text {
+    padding-top: 50px;
+    padding-left: 20px;
+    
+}
+
+.banner .text h1{
+    color: var(--medium-green);
+    font-size: 50px;
+    
+}
+#jute{
+    font-weight: 700;
+    color: var(--deep-color);
+}
+
+#btn{
+    background-color: var(--medium-green);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    margin-top: 30px;
+    border-style: none;
+    transition: ease-in all 0.3s;
+    border-radius: 20px;
+}
+#btn:hover{
+    box-shadow:0px 10px 10px rgba(193, 253, 96, 0.979);
+}
+#btn a{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text p{
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.banner .image-slider{
+    position: relative;
+    height: 70vh;
+    background-color: red;
+    width: 60%;
+    background-image: url(./assets/banner\ 1.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: bottom;
+}
+
+.quality{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.qua{
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgb(190, 250, 195);
+    transition: all 0.2s;
+
+    
+}
+.qua:hover{
+    transform: scale(1.05);
+    box-shadow:0px 10px 10px rgba(64, 68, 58, 0.13);
+}
+.qua img{
+    width: 100px;
+}
+.our-products {
+    text-align: center;
+    background-color: aliceblue;
+    background-position: bottom;
+}
+
+.our-products h1{
+    font-weight: 700;
+    font-size:50px;
+    padding-top: 30px;
+    color: var(--deep-color);
+}
+
+#a{
+    font-weight: 700;
+    color: var(--medium-green);
+}
+
+.products{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    overscroll-behavior-inline: contain;
+    grid-auto-columns: 30%;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    overflow-x: auto ;
+    
+}
+
+.product{
+    background-image: linear-gradient(to right, rgb(38, 131, 10) , rgb(10, 192, 19));
+    border-radius:20px;
+    transition: all 0.2s;
+    box-shadow: 5px 10px 30px rgba(64, 68, 58, 0.13);
+}
+
+.product:hover{
+   transform: scale(1.05);
+}
+.product img{
+    width: 400px;
+}
+.products .text{
+    padding: 20px;
+    color: white;
+}
+.products .text h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.products .text h3{
+    padding-top: 10px;
+}
+
+.products .text button{
+    background-color: rgb(8, 80, 8);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    margin-top: 30px;
+    border-style: none;
+    transition: ease-in all 0.3s;
+    border-radius: 20px;
+}
+
+.products .text button a{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.features{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(./assets/jute-bags.jpg);
+}
+
+
+.data{
+    display: flex;
+    border-radius: 20px;
+    max-width:  350px;
+    box-shadow: 5px 10px 30px rgba(64, 68, 58, 0.335);
+    transition: all 0.2s;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.data #no{
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(214, 161, 54, 0.979);
+}
+
+.data .text{
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.data:hover{
+    transform: scale(1.05);
+}
+
+
+.features .row{
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.feature h1{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.feature span{
+    color: rgba(214, 161, 54, 0.979) ;
+    
+}
+
+.row img{
+    max-width: 50px;
+}
+
+.our-team{
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    background-image: linear-gradient(to right, rgba(5, 7, 15, 0.676), rgba(15, 2, 12, 0.385)),url(./assets/portadas-NEWSLETTER-56.jpg);
+}
+
+.our-team h1{
+    color: white;
+    padding: 20px;
+}
+
+.our-team h1 span{
+    padding: 10px 5px 5px 10px;
+    background-color: rgba(214, 161, 54, 0.979);
+}
+
+.team{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    transition: all 0.2s;
+    justify-content: center;
+}
+hr{
+    margin: 0;
+    padding: 0;
+    border: 4px solid rgba(214, 161, 54, 0.979);
+}
+
+.person{
+    border-radius: 20px;
+    transition: all 0.2s;
+    margin-right: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.person img{
+    
+    width: 300px;
+}
+
+.person h2{
+    margin-top: 20px;
+}
+
+.person h4{
+    margin-bottom: 20px;
+}
